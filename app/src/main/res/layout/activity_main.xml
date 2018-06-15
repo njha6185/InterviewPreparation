@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_20dp"
+    android:scrollbars="vertical"
+    android:fillViewport="true"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.nitishkumar.interviewpreparation.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ProgressBar
+            android:id="@+id/serverFetchProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/questionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_25sp"
+            android:background="@drawable/rounded_border"
+            android:padding="@dimen/_10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/answerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/questionText"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@drawable/answer_rounded_border"
+            android:padding="@dimen/_10dp"
+            android:textSize="@dimen/_20sp"/>
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/answer_rounded_border"
+            android:text="@string/previous_question_text"
+            android:visibility="visible"/>
+
+        <Button
+            android:id="@+id/forwardButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/answer_rounded_border"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/next_question_text"
+            android:visibility="visible"/>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/backButton"
+            android:layout_centerHorizontal="true"
+            ads:adSize = "BANNER"
+            ads:adUnitId = "@string/banner_home_footer">
+
+        </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+
+</ScrollView>

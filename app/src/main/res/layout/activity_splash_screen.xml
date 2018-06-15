@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_bacground_color"
+    tools:context="com.example.nitishkumar.interviewpreparation.SplashScreen">
+
+    <TextView
+        android:id="@+id/splashText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/splash_text"
+        android:textSize="@dimen/_30sp"
+        android:textColor="@color/white_text_color"
+        android:gravity="center"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splashText"
+        android:layout_margin="@dimen/_20dp"
+        android:background="@drawable/logo_lco"
+        android:textColor="@color/red_color"
+        android:text="@string/_start"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

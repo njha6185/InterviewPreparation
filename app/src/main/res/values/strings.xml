@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">InterviewPreparation</string>
+    <string name="splash_text">DATA STRUCTURE \n INTERVIEW QUESTION</string>
+    <string name="_start">  PRESS TO START</string>
+    <string name="previous_question_text">Previous Question</string>
+    <string name="next_question_text">Next Question</string>
+    <string name="admod_app_id">ca-app-pub-8421261071787143~1659167462</string>
+    <string name="banner_home_footer">ca-app-pub-8421261071787143/1164892186</string>
+
+</resources>
